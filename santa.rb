@@ -18,7 +18,7 @@ class Santa < Thor
 
 
     (cyclic_people_list << cyclic_people_list.first).each_slice(2) { |x|
-      $stdout.puts "#{x[0][0]} #{x[0][1]} send an email to #{x[1][0]} #{x[1][1]}"
+      $stdout.puts "#{x[0][0]} #{x[0][1]} sends an email to #{x[1][0]} #{x[1][1]}"
     }
 
   end
